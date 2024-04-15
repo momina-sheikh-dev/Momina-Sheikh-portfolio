@@ -85,7 +85,7 @@ nav ul li a:hover {
     .about-content p {
        margin-top: 10px;
         text-align: center; /* Center-align the text */
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .about-content img {
@@ -225,7 +225,7 @@ footer {
 .skill {
     width: 200px; /* Adjust the width as needed */
     height: 150px; /* Adjust the height as needed */
-    background-color: black;
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
