@@ -223,8 +223,8 @@ footer {
 }
 
 .skill {
-    width: 150px; /* Adjust the width as needed */
-    height: 190px; /* Adjust the height as needed */
+    width: 130px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     padding: 20px;
@@ -254,7 +254,7 @@ footer {
 .skill-name {
     font-size: 1.2em;
     font-weight: bold;
-    color: #333;
+    color: white;
 }
 
 @keyframes progressAnimation {
