@@ -1,0 +1,271 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    margin-left: 1.6%
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: black;
+    text-decoration: none;
+    border: 2px solid white;
+    background-color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease border-radius 0.3s ease;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.scroll-section {
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+
+.about-content p {
+    flex: 1;
+    margin-right: 20px;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.about-content img {
+    max-width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Media query for smaller devices */
+@media (max-width: 768px) {
+    .about-content {
+       display: inline-block;
+    }
+
+    .about-content p {
+       margin-top: 10px;
+        text-align: center; /* Center-align the text */
+        font-size: 12px;
+    }
+
+    .about-content img {
+       min-width: 40%; /* Adjust image width for smaller screens */
+       min-height: 200%;
+
+    }
+}
+
+.project {
+    margin-top: 5%;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.skills-chart {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 50px;
+}
+
+.skill {
+    width: 100px;
+    height: 300px;
+    background-color: #fff;
+    margin: 0 10px;
+    position: relative;
+}
+
+.skill::after {
+    content: attr(data-skill);
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Contact me */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 30px; /* Adjust the size as needed */
+    color: inherit;
+}
+.social-icons:hover{
+    transform: translateY(-5px);
+}
+
+
+
+/* Particle Effect */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: -1;
+}
+#color{
+    color: white;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin-top: 3%;
+}
+
+#port-image{
+    max-width:920px !important;
+    height: 340px;
+    align-self: flex-start;
+}
+
+#aboutme:hover {
+    font-size: 28px; /* Increase font size on hover */
+}
+#projects:hover {
+    font-size: 28px; /* Increase font size on hover */
+}
+
+.decor{
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+}
+.decor:hover{
+    text-decoration: none;
+    color: green;
+    font-size: 140%;
+    font-weight: bold;
+}
+.image{
+    margin: 2% 25%;
+}
+.images{
+    margin: 2% 37%;
+}
+.images2{
+    margin: 2% 32%;
+}
+.images3{
+    margin: 2% 38.5%;
+}
+
+/* Skills */
+.containers {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.skills-chart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill {
+    width: 200px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    background-color: black;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.skill:hover {
+    transform: translateY(-10px);
+}
+
+.skill-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.skill-info {
+    text-align: center;
+    margin: 10px;
+}
+
+.skill-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+@keyframes progressAnimation {
+    from {
+        width: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .skills-chart {
+        justify-content: flex-start;
+    }
+}
+
