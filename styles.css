@@ -269,3 +269,12 @@ footer {
     }
 }
 
+#port-image {
+    width: 700px; /* Adjusts to the width of the container */
+    max-width: 500px; /* Sets a maximum width */
+    height: 700px; /* Maintains the aspect ratio */
+    display: block; /* Removes extra spacing */
+    margin: 0 auto; /* Centers the image */
+}
+
+
